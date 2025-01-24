@@ -27,8 +27,6 @@ Remoção lógica de usuários: Exclusão de usuários sem apagar os dados do ba
 Documentação da API: Disponível através do Swagger.
 📁 Estrutura do Projeto
 bash
-Copiar
-Editar
 hardwork-medicina
 ├── src
 │   ├── helpers                # Utilitários e mensagens de erro/sucesso
@@ -55,35 +53,30 @@ hardwork-medicina
 Clone o repositório:
 
 bash
-Copiar
-Editar
+
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd hardwork-medicina
 Instale as dependências:
 
 bash
-Copiar
-Editar
+
 npm install
 Configure o banco de dados: Crie um banco MySQL chamado my_nest_api e configure as credenciais no arquivo data-source.ts.
 
 Execute as migrations:
 
 bash
-Copiar
-Editar
+
 npm run typeorm migration:run
 (Opcional) Execute o banco com Docker:
 
 bash
-Copiar
-Editar
+
 docker-compose up -d
 ▶️ Uso
 Ambiente de Desenvolvimento:
 bash
-Copiar
-Editar
+
 # Execute a aplicação em modo desenvolvimento:
 npm run start:dev
 Documentação da API:
@@ -92,18 +85,15 @@ Acesse o Swagger em: http://localhost:8080/swagger-ui
 🧪 Testes
 Executar Testes Unitários:
 bash
-Copiar
-Editar
+
 npm run test
 Executar Testes End-to-End:
 bash
-Copiar
-Editar
+
 npm run test:e2e
 Gerar Cobertura de Testes:
 bash
-Copiar
-Editar
+
 npm run test:cov
 📋 Endpoints Principais
 Listagem de usuários ativos
@@ -115,9 +105,6 @@ POST /users
 Cria um novo usuário.
 Body:
 
-json
-Copiar
-Editar
 {
   "nome": "John Doe",
   "email": "john.doe@example.com"
